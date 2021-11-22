@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddWordActivity"
+    android:background="@color/colorPrimaryDark">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        android:background="@color/colorPrimary"
+        >
+        <TextView
+            android:id="@+id/tv_new_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Word"
+            android:textColor="#ffff"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+        <TextView
+            android:id="@+id/tv_word_in_E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_new_word"
+            android:text="English:"
+            android:textColor="#ffff"
+            android:textSize="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp"/>
+        <EditText
+            android:id="@+id/et_word"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/tv_word_in_E"
+            android:background="#ffff"
+            android:hint="Add your word here"/>
+        <TextView
+            android:id="@+id/tv_word_in_V"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_word"
+            android:text="Vietnamese:"
+            android:textColor="#ffff"
+            android:textSize="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp"/>
+        <EditText
+            android:id="@+id/et_vietnamese"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/tv_word_in_V"
+            android:background="#ffff"
+            android:hint="And what it mean here"/>
+        <Button
+            android:id="@+id/btn_add_new_word"
+            android:background="#D75A4AB5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:drawableLeft="@drawable/add"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_vietnamese"/>
+
+        <ImageView
+            android:id="@+id/iv_list_new_word"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/test"
+            android:layout_below="@+id/btn_add_new_word"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_list_new_word"
+            android:text="Tap the icon to show your word!"
+            android:textColor="#ffff"
+            android:textSize="22dp"
+            android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
